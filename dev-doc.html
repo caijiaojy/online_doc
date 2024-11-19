@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开发文档</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>胚胎培养监控系统开发文档</h1>
+        <table>
+            <tr>
+                <th>一级模块</th>
+                <th>二级模块</th>
+                <th>核心功能点</th>
+            </tr>
+            <tr>
+                <td rowspan="5">用户登录</td>
+                <td rowspan="5">用户登录</td>
+                <td>用户区分【管理员权限】和【普通用户】权限</td>
+            </tr>
+            <tr><td>用户登录验证，同账号不支持多设备登录</td></tr>
+            <tr><td>账户密码匹配失败弹窗提示</td></tr>
+            <tr><td>无效登录次数过多账户锁定计时</td></tr>
+            <tr><td>锁定后账户自动解锁</td></tr>
+            <tr>
+                <td rowspan="15">主界面</td>
+                <td>已添加未分配患者选项卡</td>
+                <td>
+                    - 患者基础信息展示（姓名、ID、生日、腔室号、预估授精时间、评分算法开关）<br>
+                    - 患者信息编辑<br>
+                    - 患者信息删除<br>
+                    - 患者信息搜索<br>
+                    - 列表支持按各字段正逆排序
+                </td>
+            </tr>
+            <tr>
+                <td>已分配录制中患者选项卡</td>
+                <td>
+                    - 患者基础信息展示<br>
+                    - 患者信息编辑/删除<br>
+                    - 列表排序功能<br>
+                    - 患者审查页查看<br>
+                    - 患者汇总页查看<br>
+                    - 患者信息搜索<br>
+                    - 患者数据同步
+                </td>
+            </tr>
+            <!-- 继续添加其他模块... -->
+        </table>
+    </div>
+</body>
+</html> 
